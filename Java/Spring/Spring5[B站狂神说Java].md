@@ -28,3 +28,20 @@
 ##### 1.4 拓展
         Spring Boot 构建一切。快速开发单个微服务
         Spring Cloud 协调一切
+##### 2. IOC 理论推导
+        控制反转IOC(Inversion of Control)，是一种设计思想，DI(依赖注入)是实现IOC的一种方法
+        控制反转是一种通过描述(XML或注解)并通过第三方去生产或获取特定对象的方式，在Spring中实现控制反转的是IOC容器，其实现方法是依赖注入(Dependency Injection)
+
+##### 3. HelloSpring 
+    对象由Spring来创建、管理、分配
+
+##### 4. IOC 创建对象的方式
+        new ClassPathXmlApplicationContext("beans.xml");
+
+##### 5.Spring 配置
+        别名，bean的配置，import导入
+
+##### 6. 依赖注入
+        构造器注入、  set注入、 其他注入 
+
+
