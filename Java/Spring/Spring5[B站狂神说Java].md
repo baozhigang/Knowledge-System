@@ -43,5 +43,8 @@
 
 ##### 6. 依赖注入
         构造器注入、  set注入、 其他注入 
+        作用域：
+        单例模式：<bean id="accountService" class="com.something.DefaultAccountService" scope="singleton"/> 
+        原型模式：<bean id="accountService" class="com.something.DefaultAccountService" scope="prototype"/> 
 
 
