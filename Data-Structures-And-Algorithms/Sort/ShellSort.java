@@ -1,9 +1,3 @@
-/*
- * @Description: 希尔排序
- * @Author: baozhigang
- * @Date: 2020-12-12 17:49:49
- */
-
 public class ShellSort {
     public static void main(String[] args) {
         int[] arr = {4, 5, 1, 9, 6, 7, 2, 8, 3, 0};

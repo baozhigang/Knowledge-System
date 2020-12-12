@@ -1,9 +1,3 @@
-/*
- * @Description: 基数排序 
- * @Author: baozhigang
- * @Date: 2020-12-12 17:46:49
- */
-
 public static void RadixSort(int[] arr) {
     // 求最大元素的长度
     int max = arr[0];

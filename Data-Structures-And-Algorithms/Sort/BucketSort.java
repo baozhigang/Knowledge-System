@@ -1,9 +1,3 @@
-/*
- * @Description: 桶排序
- * @Author: baozhigang
- * @Date: 2020-12-12 17:50:56
- */
-
 /**
  * 桶排序思路：
  *
