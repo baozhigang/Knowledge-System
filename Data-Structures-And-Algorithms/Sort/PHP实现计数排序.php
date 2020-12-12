@@ -4,8 +4,9 @@
  * @Date: 2020-12-12 17:32:14
 -->
 
-#  PHP实现计数排序：
-````php
+<?php 
+// PHP实现计数排序：
+
 function countingSort($arr) 
 {
     $maxValue = max($arr);
@@ -31,4 +32,3 @@ function countingSort($arr)
 
     return $arr;
 }
-````
