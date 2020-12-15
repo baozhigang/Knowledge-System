@@ -17,3 +17,13 @@
 * 应用变量的值代表位于堆之对象的存储方法  
 * 数组一定是个对象，不管所声明的元素是否为primitive主数据类型，  
   并没有primitive主数据类型的数组，只有装载primitive主数据类型的数组  
+
+### 2. 类与对象
+
+### 3. primitive主要数据和引用
+
+#### 3.1 变量的比较
+* 使用 == 来比较两个primitive主数据类型，或者判断两个引用是否引用同一个对象  
+* 使用equals()来判断两个对象是否在意义上相等  
+Foo a = new Foo(); Foo b = new Foo(); Foo c = a;  
+if (a == b) // false;  if (a == c) // true; if (b == c) false; 
