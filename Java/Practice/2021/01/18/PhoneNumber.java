@@ -23,4 +23,9 @@ public final class PhoneNumber {
         PhoneNumber pn = (PhoneNumber) o;
         return pn.areaCode == areaCode && pn.prefix == prefix && pn.lineNumber == lineNumber;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%03d-%03d-%04d", areaCode, prefix, lineNumber);
+    }
 }
