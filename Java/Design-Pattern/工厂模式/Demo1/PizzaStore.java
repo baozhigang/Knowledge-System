@@ -1,7 +1,7 @@
-public class PizzaStrore {
+public class PizzaStore {
     SimplePizzaFactory factory;
 
-    public PizzaStrore(SimplePizzaFactory factory) {
+    public PizzaStore(SimplePizzaFactory factory) {
         this.factory = factory;
     }
 
