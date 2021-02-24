@@ -13,7 +13,7 @@ public class Waitress {
         System.out.println("diner");
         printMenu(dinerIterator);
         System.out.println("pancake");
-        System.out.println(pancakeIterator);
+        printMenu(pancakeIterator);
     }
 
     public void printMenu(Iterator iterator) {
