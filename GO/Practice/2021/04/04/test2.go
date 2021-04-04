@@ -11,4 +11,12 @@ func main() {
     fmt.Println(length)
     fmt.Println(width)
     fmt.Println(customerName)
+
+    height := 10;
+    weight := 21.2
+    name := "Mr.Mr"
+
+    fmt.Println(height)
+    fmt.Println(weight)
+    fmt.Println(name)
 }
