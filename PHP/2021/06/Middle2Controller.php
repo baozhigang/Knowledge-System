@@ -11,15 +11,20 @@ declare(strict_types=1);
  */
 namespace App\Controller;
 
+use App\Middleware\BarMiddleware;
 use App\Middleware\FooMiddleware;
 use Hyperf\HttpServer\Annotation\AutoController;
 use Hyperf\HttpServer\Annotation\Middleware;
+use Hyperf\HttpServer\Annotation\Middlewares;
 
 /**
  * @AutoController()
- * @Middleware(FooMiddleware::class)
+ * @Middleware({
+ *      @Middleware(FooMiddleware::class),
+ *      @Middleware(BarMiddleware::class)
+ * })
  */
-class MiddleController extends AbstractController
+class Middle2Controller extends AbstractController
 {
     public function index()
     {
