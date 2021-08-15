@@ -15,15 +15,16 @@ func threeSum(nums []int) [][]int {
 	sort.Ints(nums)
 	ans := make([][]int, 0)
 
-	// c对应的指针初始值指向数组的最右端
-	third := n - 1
-
 	// 枚举a
 	for first := 0; first < n; first++ {
 		// 需要和上一次枚举的数不同
 		if first > 0 && nums[first] == nums[first-1] {
 			continue
 		}
+
+		// c对应的指针初始值指向数组的最右端
+		// third在下面可能变化，所以每次循环a都要重新赋值third
+		third := n - 1
 		target := -1 * nums[first]
 
 		// 枚举b
