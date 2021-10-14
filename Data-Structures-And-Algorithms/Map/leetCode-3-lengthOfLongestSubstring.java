@@ -25,15 +25,12 @@ public class LengthOfLongestSubstring {
             Character character = s.charAt(i);
             if (!map.containsKey(character)) {
                 arr[i] = arr[i-1] + 1;
-                map.put(character,i);
             } else {
                 // 如果map中存在，前面值加1和下标差值两者比较的最小值，这里是关键
                 arr[i] = Math.min(i-map.get(character), arr[i-1]+1);
-                map.replace(character,i);
             }
-            if (arr[i] > result) {
-                result = arr[i];
-            }
+            map.put(character,i);
+            result = Math.max(arr[i], result);
         }
 
         return result;
