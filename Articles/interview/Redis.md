@@ -67,3 +67,6 @@
 > 参考 https://time.geekbang.org/column/article/301092
 >
 > http://zhangtielei.com/posts/blog-redlock-reasoning.html
+
+### 9.设置了过期时间，如果业务没有完成，redis锁过期了怎么办？
+当客户端加锁成功后，可以启动一个定时任务，每隔10s来检测业务是否处理完成，检测的依据就是判断分布式锁的key是否还存在，如果存在就进行续约。
