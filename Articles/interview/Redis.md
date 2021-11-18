@@ -102,3 +102,5 @@ Redis从4.0版本之后增加了LFU策略，是对LRU策略的进一步优化。
 - 如果一部分是热点数据，一部分是冷门数据这样的缓存分布情况，建议使用allkeys-lru或者allkeys-lfu策略。
 - 如果业务应用中数据访问频率相差不大，建议用allkeys-random策略。
 - 如果业务中有置顶的需求，可以使用volatile-lru或者volatile-lfu策略，同时不给这些置顶数据设置过期时间。
+
+### 11.Redis为什么这么快？
