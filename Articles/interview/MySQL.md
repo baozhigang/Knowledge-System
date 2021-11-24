@@ -11,7 +11,7 @@
 
 ### 3.MySQL存储引擎MyISAM与InnoDB区别
 - 1）存储结构
--- myisam每张表被存储在3个文件中，frm-表格定义、MYD(MYData)-数据文件、MYI(MYIndex)-索引文件
+-- myisam的表被存储在3个文件中，frm-表格定义、MYD(MYData)-数据文件、MYI(MYIndex)-索引文件
 -- innodb所有表存储在同一数据文件，存储空间仅受限于操作内存大小，一般为2GB
 - 2）文件格式
 -- myisam 数据和索引是分开存储的，数据.MYD, 索引.MYI
