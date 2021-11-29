@@ -12,3 +12,6 @@
         fscanf(STDIN, "%[^\n]", $map[$i]);
     }
 
+    while(fscanf(STDIN, "%d %d", $m, $n)) {
+        // echo getCount($m, $n) . "\n";
+    }
